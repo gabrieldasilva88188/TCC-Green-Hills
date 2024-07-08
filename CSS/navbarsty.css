@@ -5,4 +5,33 @@
 }
 .ancora{
     color: white;
+    font-size: larger;
+}
+
+.itens{
+    margin-left: 55%;
+
+}
+.botao{
+    background-color: #82AD99;
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px solid green;
+    color: white;
+}
+.botao:hover{
+    background-color: #395549;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: #5C8F78;
 }
