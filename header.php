@@ -17,23 +17,23 @@
             Grenn hills
         </a>
         <div class="itens">
-            <a class="ancora navbar-brand mb-0 h1">
+            <a href="estufa.php" class="ancora navbar-brand mb-0 h1">
                 Estufa
                 <i class="fa-solid fa-leaf"></i>
             </a>
-            <a class="ancora navbar-brand mb-0 h1">
+            <a href="index.php" class="ancora navbar-brand mb-0 h1">
                 Gráficos
                 <i class="fa-solid fa-chart-pie"></i>
             </a>
-            <a class="ancora navbar-brand mb-0 h1">
+            <a href="relatorio.php"class="ancora navbar-brand mb-0 h1">
                 Relatório
                 <i class="fa-solid fa-clipboard"></i>
             </a>
-            <a class="ancora navbar-brand mb-0 h1">
+            <a href="ajuda.php" class="ancora navbar-brand mb-0 h1">
                 Ajuda
                 <i class="fa-solid fa-question"></i>    
             </a>
-            <input type="button" class="botao" value="Entrar">
+            <a href="login.php"><input type="button" class="botao" value="Entrar"></a>
         </div>
       </nav>
 </body>
