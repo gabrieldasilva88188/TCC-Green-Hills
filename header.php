@@ -16,7 +16,11 @@
             <img class="d-inline-block align-top" src="./logoplaceholder.png" alt="" width="40" height="30">
             Grenn hills
         </a>
-        <div class="itens">
+        <diV style="padding-left: 750px;">    
+            <a href="index.php" class="ancora navbar-brand mb-0 h1">
+                home
+                <i class="fa-solid fa-house"></i>
+            </a>
             <a href="estufa.php" class="ancora navbar-brand mb-0 h1">
                 Estufa
                 <i class="fa-solid fa-leaf"></i>
