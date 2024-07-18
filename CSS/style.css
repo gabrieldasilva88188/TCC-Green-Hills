@@ -49,11 +49,20 @@ h1{
 .botao:hover{
     background-color: #486256
 }
-label{
+.paragrafo{
+    margin-left: 150px ;
+}
+.caixa label{
     width: 300px;
     height: 20px;
 }
-
+.campos{
+    width: 400px;
+    height: 20px;
+    border-radius: 50px !important;
+    /*background-color: #5C8F78;*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
 *{
 padding: 0;
 margin: 0;
