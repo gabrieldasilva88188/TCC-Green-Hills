@@ -1,30 +1,42 @@
-.botaore{
-    background-color: #5C8F78;
-    color: white;
-    width: 300px;
+.BUT{
+    background-color: #5C8F78 ;
+    width: 200px;
     height: 50px;
-    border-radius: 30px;
+    color: white;
+    border-radius: 50px;
     margin: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 0px;
+    margin-bottom:25px ;
+    font-weight: bold;
+    box-shadow: #32325d40 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: background-color 1s !important;
+    }
+.BUT:hover{
+    background-color: #486256
 }
-.secaobutton{
-    height: 100px;
+.conteiner{
     width: 100%;
-
+    height: 100px;
+    padding-top: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.UTL{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: end;
-    height: 90px;
-    column-gap:10px ;
+.tabela-conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.tabelahead{
-    border: 1px solid black;
-    width: 300px;
+.table > th{
+    background-color: #5C8F78 !important;
+    color: white ;
+    text-align: center;
+    width: 200px ;
+    height: 50px ;
+    border: 2px solid black ;
 }
-.tabelaitem{
-    border: 1px solid black;
-    width: 300px;
+.table > td{
+    text-align: center;
+    border: 1px solid black ;
 }
