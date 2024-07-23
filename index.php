@@ -5,51 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style_relatorio.css">
     <title>Relatório</title>
+    <style>
+        th{
+    background-color: #5C8F78;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 10px solid black;
+}
+    </style>
 </head>
 <body>
-    <!-- Incluir o cabeçalho com a navbar usando PHP -->
-    <?php include 'header.php'; ?>
-
-    <!-- Conteúdo principal da página -->
-    <div class="secaobutton">
-        <div style="padding-left:10%; padding-right:10%">
-            <div class="botoes">
-                <input type="button" class="botaore" value="umidade">
-                <input type="button" class="botaore" value="temperatura">
-                <input type="button" class="botaore" value="luminosidade">
-            </div>
-        </div>  
-    </div>
     
-    <div>
-        <table style="width:100%">      
-            <tr>
-                <th class="tabelahead">Tempo</th>
-                <th class="tabelahead">Mínima</th>
-                <th class="tabelahead">Media</th>
-                <th class="tabelahead">Máxima</th>
-            </tr>
-            <tr>
-                <td class="tabelaitem">Dia</td>
-                <td class="tabelaitem">Maria Anders</td>
-                <td class="tabelaitem">Germany</td>
-                <td class="tabelaitem">Germany</td>
-            </tr>
-            <tr>
-                <td class="tabelaitem">Semana</td>
-                <td class="tabelaitem">Francisco Chang</td>
-                <td class="tabelaitem">Mexico</td>
-                <td class="tabelaitem">Germany</td>
-            </tr>
-            <tr>
-                <td class="tabelaitem">Mês</td>
-                <td class="tabelaitem">Francisco Chang</td>
-                <td class="tabelaitem">Mexico</td>
-                <td class="tabelaitem">Germany</td>
-            </tr>
-        </table>
+    <?php include 'header.php';?>
+    <div style="height:120px"></div>
+    <div class="conteiner">
+        <button class="BUT"><b>Umidade</b></button>
+        <button class="BUT"><b>temperatura</b></button>
+        <button class="BUT"><b>Luminosidade</b></button>
     </div>
-
-
+    <div>
+        <div class="tabela-conteiner">
+            <table class="table table-hover" style="width:80%;">
+                <tr>
+                    <th>Tempo</th>
+                    <th>Umidade</th>
+                    <th>temperatura</th>
+                    <th>luminosidade</th>
+                </tr>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th>Dia</th>
+                        <td>25.1</td>
+                        <td>12%</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <th>Semana</th>
+                        <td>26.0</td>
+                        <td>16%</td>
+                        <td>29%</td>
+                    </tr>
+                    <tr>
+                        <th>Mês</th>
+                        <td>26.3</td>
+                        <td>17%</td>
+                        <td>34%</td>
+                    </tr>     
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <input type="button" value="">
+    </div>
 </body>
 </html>
