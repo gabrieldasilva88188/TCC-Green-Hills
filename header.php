@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar ye ye</title>
-    <link rel="stylesheet" href="./CSS/navstyle.css ">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css ">
+    <link rel="stylesheet" href="./CSS/style_relatorio.css ">
+    <link rel="stylesheet" href="./CSS/navstyle.css ">
     <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
     <script src="./fontawesome-free-6.5.2-web/js/all.min.js"></script>
 </head>
@@ -26,22 +28,22 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item navbaritens">
-              <a class="nav-link fs-5 text-center text-white navbar-brand" aria-current="page" href="#">Home <i class="fa-solid fa-house"></i></a>
+              <a class="nav-link fs-5 text-center text-white navbar-brand h1" aria-current="page" href="#">Home <i class="fa-solid fa-house"></i></a>
             </li>
             <li class="nav-item navbaritens">
-              <a class="nav-link fs-5 text-center text-white navbar-brand" href="estufa.php">Estufa <i class="fa-solid fa-leaf"></i></a>
+              <a class="nav-link fs-5 text-center text-white navbar-brand h1" href="estufa.php">Estufa <i class="fa-solid fa-leaf"></i></a>
             </li>
             <li class="nav-item navbaritens">
-              <a class="nav-link fs-5 text-center text-white navbar-brand" href="relatorio.php">Relatório <i class="fa-solid fa-clipboard"></i></a>
+              <a class="nav-link fs-5 text-center text-white navbar-brand h1" href="relatorio.php">Relatório <i class="fa-solid fa-clipboard"></i></a>
             </li>
             <li class="nav-item navbaritens">
-              <a class="nav-link fs-5 text-center text-white navbar-brand" href="grafico.pgp">Graficos <i class="fa-solid fa-chart-pie"></i></a>
+              <a class="nav-link fs-5 text-center text-white navbar-brand h1" href="grafico.pgp">Graficos <i class="fa-solid fa-chart-pie"></i></a>
             </li>
             <li class="nav-item navbaritens">
-              <a class="nav-link fs-5 text-center text-white navbar-brand" href="login.php">Logar</a>
+              <a class="nav-link fs-5 text-center text-white navbar-brand h1" href="login.php">Logar</a>
             </li>
             <li class="nav-item navbaritens">
-              <a class="nav-link fs-5 text-center text-white navbar-brand" href="cadastrar.php">cadastre-se</a>
+              <a class="nav-link fs-5 text-center text-white navbar-brand h1" href="cadastrar.php">cadastre-se</a>
             </li>
           </ul>
         </div>
