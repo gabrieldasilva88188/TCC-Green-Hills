@@ -11,16 +11,18 @@
     <script src="./fontawesome-free-6.5.2-web/js/all.min.js"></script>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <form >
+    
+    <form class="conteiner">
         <div class="caixa">
-            <div class="bolabranca"></div>
-            <i class="usu fa-solid fa-user"></i>
-            <div class="form-floating" style="margin: 50px; margin-bottom: 10px;">               
+            <h1 >Cadastro</h1>
+            <div class="bolabranca">
+                <i class="usu fa-solid fa-user"></i>
+            </div> 
+            <div class="form-floating" style=" margin-bottom: 10px;">               
                 <input type="email" class="campos form-control" placeholder="e" required>
                 <label for="Email" class="form-label"><i class="fa-solid fa-user"></i> Email</label>
             </div>
-            <div class="form-floating" style="margin: 50px; margin-top: 10px;">                 
+            <div class="form-floating" style="margin-top: 10px;">                 
                 <input class="campos form-control" type="password" placeholder="s" required>
                 <label for="Senha"class="form-label"><i class="fa-solid fa-lock"></i> Senha</label>
             </div>  
@@ -30,6 +32,6 @@
                 <p class="paragrafo">Já tem conta?<a href="login.php">Clique aqui</a></p>
         </div>
     </form>
-    
 </body>
 </html>
+
