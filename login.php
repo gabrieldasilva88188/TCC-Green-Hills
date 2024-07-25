@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Hills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
@@ -14,11 +15,12 @@
     </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form >
+    <form class="conteiner">
         <div class="caixa">
-            <div class="bolabranca"></div>
-            <i class="usu fa-solid fa-user"></i>
+            <h1>Login</h1>
+            <div class="bolabranca">
+                <i class="usu fa-solid fa-user"></i>
+            </div>
             <div class="form-floating" style="margin: 50px; margin-bottom: 10px;">               
                 <input type="email" class="campos form-control" placeholder="e" required>
                 <label for="Email" class="form-label"><i class="fa-solid fa-user"></i> Email</label>
@@ -35,7 +37,7 @@
 
             </div>
                 <input class="botao"type="button" title="btLogin" value="Login" required>
-                <p class="paragrafo">Crie sua conta <a href="cadastro.php">Clique aqui</a></p>
+                <p class="paragrafo">Crie sua conta <a href="index.php">Clique aqui</a></p>
         </div>
     </form>
     
