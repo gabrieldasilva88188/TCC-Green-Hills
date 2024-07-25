@@ -5,22 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style_relatorio.css">
     <title>Relatório</title>
-    <style>
-        th{
-    background-color: #5C8F78;
-    color: white;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    border: 10px solid black;
-}
-    </style>
 </head>
 <body>
     
     <?php include 'header.php';?>
     <div style="height:120px"></div>
-    <div class="conteiner">
+    <div class="conteiner-relatorio">
         <button class="BUT"><b>Umidade</b></button>
         <button class="BUT"><b>temperatura</b></button>
         <button class="BUT"><b>Luminosidade</b></button>
