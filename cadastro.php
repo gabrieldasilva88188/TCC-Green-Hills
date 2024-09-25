@@ -4,34 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Hills</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
-    <script src="./fontawesome-free-6.5.2-web/js/all.min.js"></script>
 </head>
 <body>
-    
+<!--
+<summary>
+    Inclui o cabeçalho (navbar) do site através de um arquivo PHP 'header.php'.
+</summary>
+-->
+<?php include 'header.php';?>
+
+    <!--
+    <summary>
+        Formulário de cadastro que contém campos para o usuário inserir email, senha e botões de ação.
+    </summary>
+    -->
     <form class="conteiner">
+        <!--
+        <summary>
+            Caixa que contém o conteúdo principal da tela de cadastro.
+        </summary>
+        -->
         <div class="caixa">
-            <h1 >Cadastro</h1>
+            <!--
+            <summary>
+                Título principal da página de cadastro.
+            </summary>
+            -->
+            <h1>Cadastro</h1>
+            
+            <!--
+            <summary>
+                Ícone de usuário inserido dentro de uma div circular.
+            </summary>
+            -->
             <div class="bolabranca">
                 <i class="usu fa-solid fa-user"></i>
             </div> 
-            <div class="form-floating" style=" margin-bottom: 10px;">               
+
+            <!--
+            <summary>
+                Campo de input para o email do usuário, estilizado como campo flutuante.
+            </summary>
+            -->
+            <div class="form-floating" style="margin-bottom: 10px;">               
                 <input type="email" class="campos form-control" placeholder="e" required>
                 <label for="Email" class="form-label"><i class="fa-solid fa-user"></i> Email</label>
             </div>
+
+            <!--
+            <summary>
+                Campo de input para a senha do usuário, também estilizado como campo flutuante.
+            </summary>
+            -->
             <div class="form-floating" style="margin-top: 10px;">                 
                 <input class="campos form-control" type="password" placeholder="s" required>
-                <label for="Senha"class="form-label"><i class="fa-solid fa-lock"></i> Senha</label>
+                <label for="Senha" class="form-label"><i class="fa-solid fa-lock"></i> Senha</label>
             </div>  
-                <button class="botao"><i class="fa-brands fa-google"></i> Entrar com google</button>
 
-                <input class="botao" style="margin-bottom: 10px;" type="button" title="btLogin" value="Login" required>
-                <p class="paragrafo">Já tem conta?<a href="login.php">Clique aqui</a></p>
+            <!--
+            <summary>
+                Botão para o login direto do usuário.
+            </summary>
+            -->
+            <input class="botao" style="margin-bottom: 10px;" type="button" title="btLogin" value="Login" required>
+
+            <!--
+            <summary>
+                Link para redirecionar o usuário ao formulário de login caso já tenha uma conta.
+            </summary>
+            -->
+            <p>Já tem conta? <a href="login.php">Clique aqui</a></p>
         </div>
     </form>
 </body>
 </html>
-
