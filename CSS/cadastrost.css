@@ -1,0 +1,261 @@
+/*
+   Define o estilo do botão principal, com fundo verde (#5C8F78), texto branco,
+   bordas arredondadas (50px) e sombras para dar profundidade. Transição suave
+   nas alterações ao passar o mouse.
+    */
+.botao{
+    background-color: #5C8F78;
+    color: white;
+    width: 15vw; 
+    min-width: 250px;
+    height: 50px; 
+    border-radius: 50px;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+/*
+   Altera o fundo do botão quando o mouse está sobre ele.
+    */
+.botao:hover{
+    background-color: #486256;
+}
+
+/*
+   Container com fundo verde claro (#A8BFAA), centralizado vertical e horizontalmente,
+   com altura igual à viewport e largura de 35%.
+    */
+.caixa-verde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    min-width: 350px;
+    height: 100vh;
+    background-color: #A8BFAA;
+}
+
+/*
+   Define o estilo dos parágrafos dentro da caixa verde com tamanho de fonte de 1rem e cor branca.
+    */
+.caixa-verde p{
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+/*
+   Define o título com tamanho de fonte de 2.5rem e cor branca.
+    */
+.caixa-verde h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+/*
+   Altera o fundo do botão para combinar com o fundo da caixa verde quando o mouse está sobre ele.
+    */
+.caixa-verde .botao:hover{
+    background-color: #A8BFAA;
+}
+
+/*
+   Botões dentro da caixa verde têm o fundo branco e uma borda verde,
+   com o texto na cor verde escura (#5C8F78).
+    */
+.caixa-verde .botao{
+    color: #5C8F78;
+    background-color: whitesmoke;
+    border: 1px solid #5C8F78;
+}
+
+/*
+   Container com fundo branco, centralizado vertical e horizontalmente,
+   com altura igual à viewport e largura de 65%.
+    */
+.caixa-branca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100vh;
+    background-color: white;
+}
+
+/*
+   Esconde o parágrafos dentro da caixa branca.
+    */
+.caixa-branca p{
+    position: absolute;
+    z-index: -1;
+}
+
+/*
+   Botões dentro da caixa branca têm uma borda verde escura
+    */
+.caixa-branca .botao{
+    border: 1px solid #5C8F78;
+}
+
+/*
+   Define a cor do texto dentro da caixa branca como verde escura, e ajusta o tamanho da fonte.
+   O título dentro da caixa branca tem uma fonte maior de 3rem.
+    */
+.caixa-branca h1{
+    color: #5C8F78;
+    font-size: 3rem;
+}
+
+/*
+   Define o layout do container principal usando flexbox,
+   garantindo que os itens sejam centralizados tanto horizontal quanto verticalmente.
+    */
+.conteiner{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+   Define o estilo dos campos de entrada com largura de 400px, altura de 20px e bordas arredondadas.
+    */
+.conteiner .campos{
+    width: 400px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+/*
+   Define a margem para os elementos com a classe 'form-floating' dentro do container.
+    */
+.conteiner .form-floating{
+    margin: 10px;
+}
+
+/*
+   Estilo padrão para os rótulos de formulário, com cor escura (#333) e texto em negrito.
+    */
+label {
+    color: #333;
+    font-weight: bold;
+}
+/*
+   Define o título principal com fonte em negrito.
+    */
+h1{
+    font-weight: bold;
+}
+
+/*
+   Define a transição suave de 0.5 segundos para as alterações na classe 'tansi-label'.
+    */
+.tansi-label{
+    transition: all 0.5s;
+}
+
+/* 
+    Regras de estilo quando a largura da tela é menor que 600px 
+     */
+@media only screen and (max-width: 600px) {
+
+    /*
+       Ajusta o estilo do botão em telas pequenas para que tenha uma largura fixa de 300px.
+        */
+    .botao{
+        background-color: #5C8F78;
+        color: white;
+        width: 300px;
+    }
+
+    /*
+       Esconde a caixa verde em telas pequenas, definindo-a como posição absoluta e z-index negativo.
+        */
+    .caixa-verde{
+        position: absolute;
+        z-index: -1;
+    }
+
+    /*
+       A caixa branca ocupa 100% da largura em telas pequenas e muda seu fundo para verde escuro.
+        */
+    .caixa-branca{
+        width: 100%;
+        background-color: #5C8F78;
+    }
+
+    /*
+       O container principal adota o fundo verde claro (#A8BFAA) em telas menores.
+        */
+    .conteiner{
+        background-color: #A8BFAA;
+    }
+
+    /*
+       O título dentro do container é branco em telas pequenas.
+        */
+    .conteiner h1{
+        color: white;
+    }
+
+    /*
+       Reduz a largura dos campos de entrada para 300px em dispositivos menores.
+        */
+    .conteiner .campos{
+        width: 300px;
+    }
+
+    /*
+       Os parágrafos dentro da caixa branca ficam visíveis, com o texto branco.
+        */
+    .caixa-branca p{
+        position: relative;
+        color: white;
+        z-index: 1;
+    }
+}
+
+/* 
+    Regras de estilo quando a largura da tela é menor que 1100px 
+     */
+@media only screen and (max-width: 1100px) {
+    .caixa-verde{
+        position: absolute;
+        z-index: -1;
+    }
+    .caixa-branca{
+        width: 100%;
+    }
+
+    /*
+       Os parágrafos dentro da caixa branca ficam visíveis, com o texto branco.
+        */
+    .caixa-branca p{
+        position: relative;
+        color: #5C8F78;
+        z-index: 1;
+    }
+    
+}
+
+/*
+   Aplica um reset básico de CSS removendo espaçamentos, definindo a caixa de borda
+   para incluir paddings/margens e define a fonte principal como "Poppins".
+    */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}

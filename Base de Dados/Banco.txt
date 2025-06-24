@@ -1,0 +1,129 @@
+===================
+Atual Base de Dados - Antiga
+===================
+
+CREATE TABLE estufas (
+    id CHAR(8) PRIMARY KEY
+);
+
+CREATE TABLE tbsensores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sensor1 VARCHAR(15),
+    sensor2 VARCHAR(15),
+    sensor3 VARCHAR(15),
+    datahora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    estufa_id CHAR(8),
+    FOREIGN KEY (estufa_id) REFERENCES estufas(id)
+);
+
+CREATE TABLE usuarios(
+	id INT PRIMARY KEY AUTO_INCREMENT, 
+    nome VARCHAR(100) NOT NULL,
+    user VARCHAR(15) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(100) NOT NULL
+);
+
+ALTER TABLE estufas ADD COLUMN usuario_id INT;
+ALTER TABLE estufas ADD FOREIGN KEY (usuario_id) REFERENCES usuarios(id);
+
+
+===================
+Nova Base de Dados - Base de Dados Que o Projeto se encontra atualmente
+===================
+
+-- Tabela de usuários
+CREATE TABLE usuarios(
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
+    empresa VARCHAR(100) NOT NULL,
+    user VARCHAR(15) NOT NULL, -- Tipo de usuário (adminMaster, admin, comum)
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(100) NOT NULL
+);
+
+-- Tabela de estufas
+CREATE TABLE estufas (
+    id CHAR(8) PRIMARY KEY,
+    nome_estufa VARCHAR(100) -- Nome opcional para identificação da estufa
+);
+
+-- Tabela para associar usuários e estufas (relacionamento muitos-para-muitos)
+CREATE TABLE usuarios_estufas (
+    usuario_id INT,
+    estufa_id CHAR(8),
+    PRIMARY KEY (usuario_id, estufa_id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    FOREIGN KEY (estufa_id) REFERENCES estufas(id)
+);
+
+-- Tabela de sensores
+CREATE TABLE tbsensores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sensor1 VARCHAR(15),
+    sensor2 VARCHAR(15),
+    sensor3 VARCHAR(15),
+    datahora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    estufa_id CHAR(8),
+    FOREIGN KEY (estufa_id) REFERENCES estufas(id)
+);
+
+
+
+=========================
+Iserções na Base De Dados
+=========================
+
+Usuarios mestres do Sistema 
+INSERT INTO usuarios VALUES ('1','Felipe Souza','adminMaster','felipefrs2007@gmail.com','123')
+
+Usuarios Administradores
+--
+
+Usuarios Comuns
+--
+
+Iserindo valores na tabela de sensores
+-- Inserir 10 registros para a estufa com ID '12345678'
+INSERT INTO tbsensores (sensor1, sensor2, sensor3, estufa_id) VALUES 
+('23.5', '45.1', '102.4', '12345678'),
+('22.1', '46.0', '101.9', '12345678'),
+('24.2', '44.3', '103.1', '12345678'),
+('21.9', '43.5', '104.0', '12345678'),
+('25.0', '47.2', '105.2', '12345678'),
+('23.7', '46.1', '102.5', '12345678'),
+('22.5', '44.8', '101.7', '12345678'),
+('24.9', '45.5', '103.6', '12345678'),
+('23.3', '43.8', '102.2', '12345678'),
+('22.9', '44.5', '104.1', '12345678');
+
+-- Inserir 10 registros para a estufa com ID '87654321'
+INSERT INTO tbsensores (sensor1, sensor2, sensor3, estufa_id) VALUES 
+('24.5', '48.1', '106.4', '87654321'),
+('23.1', '49.0', '107.9', '87654321'),
+('25.2', '47.3', '108.1', '87654321'),
+('22.9', '46.5', '106.0', '87654321'),
+('26.0', '49.2', '109.2', '87654321'),
+('24.7', '48.1', '107.5', '87654321'),
+('23.5', '46.8', '106.7', '87654321'),
+('25.9', '47.5', '108.6', '87654321'),
+('24.3', '46.8', '107.2', '87654321'),
+('23.9', '48.5', '109.1', '87654321');
+
+-- Inserir 10 registros para a estufa com ID '12345679'
+INSERT INTO tbsensores (sensor1, sensor2, sensor3, estufa_id) VALUES 
+('22.5', '41.1', '98.4', '12345679'),
+('21.1', '40.0', '99.9', '12345679'),
+('23.2', '42.3', '100.1', '12345679'),
+('20.9', '39.5', '101.0', '12345679'),
+('24.0', '43.2', '102.2', '12345679'),
+('22.7', '41.1', '100.5', '12345679'),
+('21.5', '39.8', '99.7', '12345679'),
+('23.9', '40.5', '101.6', '12345679'),
+('22.3', '38.8', '100.2', '12345679'),
+('21.9', '39.5', '101.1', '12345679');
+
+
+
+

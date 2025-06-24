@@ -1,0 +1,70 @@
+/* Estilo para o botão de conectar à Estufa */
+.btn-conectar-estufa{
+    background-color: #5C8F78;
+    color: white;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    border: 1px hidden;
+}
+
+/* Efeito de hover no botão de conectar Estufa */
+.btn-conectar-estufa:hover{
+    background-color: #5C8F78;
+    color: whitesmoke;
+}
+/* Estilo para os botões de ver dados e exclusão */
+.ver-dados, .btn-excluir{
+    background-color: #5C8F78;
+    color: white;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.0rem;
+    transition: all 0.5s;
+}
+/* Estilo específico para o botão de excluir */
+.btn-excluir{
+    background-color: #ff1100;
+}
+/* Efeito de hover no botão de visualizar dados */
+.ver-dados:hover{
+    background-color: #486256;
+    color: whitesmoke;
+}
+/* Efeito de hover no botão de excluir */
+.btn-excluir:hover{
+    background-color: #ff0800;
+    color: whitesmoke;
+}
+/* Estilo para o cabeçalho do modal */
+.modal-header{
+    background-color: #5C8F78;
+}
+/* Estilo para o título e o campo de ID no modal */
+.modal-title, .campo-id{
+    color: whitesmoke;
+}
+/* Estilo para o corpo do modal */
+.modal-body{
+    background-color: #A8BFAA;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* Estilo para o conteúdo do modal */
+.modal-content{
+    border-radius: 50px;
+}
+/* Estilo para o botão dentro do modal */
+.btn-modal{
+    color: #5C8F78;
+    background-color: whitesmoke;
+    border: 1px solid #5C8F78;
+}
+

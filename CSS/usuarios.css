@@ -1,0 +1,134 @@
+/* Botão personalizado para botão de salvar alterações no modal editar funcionario*/
+.botao-sa{
+    background-color: #5C8F78;
+    color: white;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px solid #000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    border: 1px hidden;
+}
+
+.botaof{
+    background-color: #5C8F78;
+    color: white;
+    width: 15vw; 
+    height: 50px; 
+    border-radius: 50px;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.botaof:hover{
+    background-color: #486256;
+}
+
+/* Efeito de hover para o botão salvar alterações */
+.botao-sa:hover{
+    background-color: #486256;
+    color: whitesmoke;
+}
+
+/* Classe para o fundo escuro para a barra de busca de empresas */
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+    
+}
+
+/* personalização dos botões excluir e cancelar que ficam no modal de exvluir funcionario */
+.btn-cancelar, .btn-excluir{
+    background-color: #5C8F78;
+    color: white;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.0rem;
+    transition: all 0.5s;
+}
+
+/* personalização da cor de fundo do botão excluir */
+.btn-excluir{
+    background-color: #ff1100;
+}
+
+/* Efeito de hover para o botão cancelar */
+.btn-cancelar:hover{
+    background-color: #486256;
+    color: whitesmoke;
+}
+
+/* Efeito de hover para o botão excluir*/
+.btn-excluir:hover{
+    background-color: #dd0a03;
+    color: whitesmoke;
+}
+
+/* arredinda as bordas dos campos que estão dentro de mb-4*/
+.mb-4 .campos{
+    border-radius: 50px;
+}
+
+/* arredinda as bordas dos campos que estão dentro de mb-3*/
+.mb-3 .campos{
+    border-radius: 50px;
+}
+
+/* Estilo para o título do modal e campos de texto */
+.modal-title, .campo-texto{
+    color: whitesmoke;
+}
+
+/* Estilo para os campos de formulário */
+.form-control{
+    border-radius: 50px;
+}
+
+/* Estilo para o sub-título do cartão do usuário*/
+.usuario-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo do cartão do usuário */
+.usuario-card {
+    background-color: #444444;
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+/* Estilo para a área de busca lateral */
+.side-search {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    min-width: 200px;
+}
+    
+@media only screen and (max-width: 995px) {
+    .usuario-card{
+        min-width: 150px;
+    }
+    .side-search{
+        min-width: 150px;
+    }
+    .botaof{
+        width: 100px !important;
+    }
+}

@@ -1,0 +1,45 @@
+/* Estilo para o botão de alerta */
+.btn-alerta{
+    background-color: #5C8F78;
+    color: white;
+    width: 180;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    border: 1px hidden;
+}
+
+/* Estilo para o estado hover (passar o mouse) do botão */
+.btn-alerta:hover{
+    background-color: #486256;
+    color: whitesmoke;
+}
+
+/* Estilo para o estado ativo (quando o botão é pressionado) */
+.btn-alerta:active{
+    color: white !important;
+    background-color: #486256 !important;
+    border-color: #486256 !important;
+}
+
+/* Estilo para a caixa de alerta */
+.alert-warning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #A8BFAA;
+    border: 0px hidden;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+/* Estilo para o texto dentro do alerta */
+.p-alerta{
+    color: white;
+    font-size: 1.2rem;
+}

@@ -1,28 +1,66 @@
+/*
+   Define os itens da barra de navegação com cantos arredondados (12px) e
+   aplica uma transição suave de 0.5s ao alterar a cor de fundo.
+    */
 .navbaritens{
     border-radius: 12px;
     transition: background-color 0.5s;
 }
+
+/*
+   Muda a cor de fundo dos itens da barra de navegação para verde escuro (#115923)
+   quando o mouse passa sobre eles.
+    */
 .navbaritens:hover{
-    background-color: #006769;
-}
-.navbar-green-hills nav{
-    height: 12vh;
-    font-size: 1.2rem;
-    background-color: #5C8F78 ;
-    
-}
-.sidebar .offcanvas-body{
-    background-color: #5C8F78; 
-    color: white; 
+    background-color: #115923;
 }
 
+/*
+   Estiliza a barra de navegação com altura de 10% da viewport (10vh),
+   tamanho da fonte de 1.2rem e um fundo verde (#658C6F).
+    */
+.navbar-green-hills nav{
+    height: 10vh;
+    min-height: 50px;
+    max-height: 100px;
+    font-size: 1.2rem;
+    background-color: #658C6F;
+}
+
+/*
+   Define o corpo do offcanvas (menu lateral) com fundo verde (#658C6F)
+   e texto na cor branca.
+    */
+.sidebar .offcanvas-body{
+    background-color: #658C6F;
+    color: white;
+}
+
+/*
+   Estiliza o cabeçalho do offcanvas com fundo verde-escuro (#006769)
+   e uma borda inferior branca para separar visualmente o conteúdo.
+    */
 .sidebar .offcanvas-header {
-    background-color: #006769; 
-    border-bottom: 1px solid white; 
+    background-color: #006769;
+    border-bottom: 1px solid white;
 }
+
+/*
+   Remove as margens ao redor do logotipo ou nome da marca dentro da barra de navegação.
+    */
 .navbar-brand{
-    margin: 0px ;
+    margin: 0px !important;
 }
+
+h1 {
+    margin: 0px !important;
+}
+
+/*
+   Reset de CSS que remove margens e paddings padrão,
+   define `box-sizing` para incluir margens no cálculo de largura,
+   e aplica a fonte "Poppins" para todo o documento.
+    */
 *{
     padding: 0;
     margin: 0;
