@@ -1,4 +1,4 @@
-# 🌱 Green Hills – Estufa Automatizada Inteligente
+# Green Hills – Estufa Automatizada Inteligente
 
 > Trabalho de Conclusão de Curso do Curso Técnico em Desenvolvimento de Sistemas – ETEC Fernando Prestes
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📑 Sumário
+##Sumário
 
 1. [Visão geral](#1-visão-geral)
 2. [Requisitos](#2-requisitos)
@@ -112,7 +112,7 @@ O Green Hills centraliza as leituras, automatiza ações (irrigação e ventila�
 
 ## 3. Tecnologias utilizadas
 
-### 🔌 Hardware
+### Hardware
 
 | Componente | Função |
 |-----------|--------|
@@ -123,7 +123,7 @@ O Green Hills centraliza as leituras, automatiza ações (irrigação e ventila�
 | Ventoinha | Ventilação |
 | Protoboard, jumpers e estrutura física | Montagem do protótipo da estufa |
 
-### 💻 Software
+### Software
 
 | Camada | Tecnologia |
 |--------|-----------|
@@ -357,7 +357,7 @@ Outros parâmetros relevantes:
 | URL do servidor | Firmware do Arduino | IP/host e caminho de `salvar.php` |
 | Variáveis de sessão `$_SESSION['id']` e `$_SESSION['user']` | PHP | ID do usuário e seu tipo (`comum`, `admin`, `adminMaster`) |
 
-> 🔒 **Em produção**, nunca use `root` sem senha. Crie um usuário MySQL dedicado com permissões apenas sobre `bdarduino` e **não versione** credenciais reais.
+> **Em produção**, nunca use `root` sem senha. Crie um usuário MySQL dedicado com permissões apenas sobre `bdarduino` e **não versione** credenciais reais.
 
 ---
 
@@ -621,4 +621,4 @@ Pontos identificados na revisão do código, úteis como roadmap:
 
 Este projeto foi desenvolvido exclusivamente para **fins acadêmicos**. Para outros usos, entre em contato com os autores.
 
-Obrigado por visitar nosso projeto! 🌿
+Obrigado por visitar nosso projeto!
